@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width"
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="imagenes/Vector.png" alt="Logo de alura letra inicial de letra a"> <!--alt descripción de imagen-->
+    </header>
+    <main>
+        <section>
+            <textarea class="input-primerTexto"
+            placeholder="Ingrese el texto aquí"></textarea>
+            <p class="span">Solo se admiten letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    <p class="letras-encriptar">Encriptar</p>
+                </button>
+            
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    <p class="letras-desencriptar">Desencriptar</p>
+                </button>
+            </div>  
+        </section>
+
+        <section>
+            <textarea  class="mensaje"></textarea>
+            <button class="copiar" onclick="copiar()">
+                    <p class="letras-copiar">Copiar</p>
+            </button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    
+    <footer class="pie">
+        <p>&copy; Copyright Angelo Mendoza Challenge Encriptador de Texto</p>
+    </footer>
+</body>
+</html>
